@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+
+    <link type="text/css" href="https://www.ruijienetworks.com/res/UIB/Styles_R/idangerous.swiper.css" rel="stylesheet">
+    <link type="text/css" href="https://www.ruijienetworks.com/res/UIB/Styles_R/main.css" rel="stylesheet">
+    <link type="text/css" href="https://www.ruijienetworks.com/res/UIB/Styles_R/util.css" rel="stylesheet">
+
+    <!--引入css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link type="text/css" href="css/scene.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/jquery.placeholder.js" type="text/javascript"></script>
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/header.js" type="text/javascript"></script>
+    <script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/util.js" type="text/javascript"></script>
+    <!--引入js-->
+    <script src="js/turn.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/homeScript.js"></script>
+    <script type="text/javascript" src="js/nav-path.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('input, textarea').placeholder();
+        });
+    </script>
+    <script type='text/javascript'>
+        var _gsq = _gsq || [];
+        (function() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002990-C18B4B/gs.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(s, firstScript);
+        })();
+    </script>
+
+    <!--[if lt IE 9]>
+			<script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/respond.min.js" type="text/javascript"></script>
+			<script src="https://www.ruijienetworks.com/res/UIB/Scripts_R/html5shiv.min.js" type="text/javascript"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <!-- 公共头部导航开始 -->
+    <div class="header">
+        <div class="header-in clearfix">
+            <h1 class="logo">
+                <a href="/" title=""></a>
+            </h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="on">
+                        <a href="https://www.ruijienetworks.com/" title="">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/solutions" title="">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/products" title="">Products</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/support" title="">Support</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/trainings" title="">Trainings</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/partners" title="">Partners</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/about" title="">About Ruijie</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-r clearfix">
+                <div class="login-box">
+                    <input type="hidden" id="LoginAndRegister" /><span>|</span>
+                    <a target="_blank" href="https://community.ruijienetworks.com/">Community</a><span>|</span>
+                    <a target="_blank" href="https://www.ruijienetworks.com/resources">Resources</a><span>|</span>
+                    <a target="_blank" href="https://caseportal.ruijienetworks.com/">Case Portal</a>
+                    <!--<a 
+
+href="#">Login</a><span>|</span><a href="#">Register</a>-->
+                </div>
+                <div class="language">
+                    <div class="dropdown">
+                        <span><a href="https://www.ruijienetworks.com/" target="_blank">English</a></span>
+                        <div class="dropdown-content">
+                            <p>
+                                <a href="http://www.ruijie.com.cn">中文简体</a>
+                            </p>
+                            <p class="current">
+                                <a href="javascript:void(0)" style="cursor:auto">English</a>
+                            </p>
+                            <p>
+                                <a href="https://www.ruijienetworks.com/ru/">Pусский</a>
+                            </p>
+                            <p>
+                                <a href="https://www.ruijienetworks.com/jp/">日本語</a>
+                            </p>
+                            <p>
+                                <a href="https://www.ruijienetworks.com/tr/">Türkçe</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://www.ruijienetworks.com/about/contact" class="contact">Contact Us</a>
+                </div>
+                <div class="search-box">
+
+                    <div class="search">
+                        <input id="txtSearchKey" type="text" placeholder="search..." class="i-search" maxlength="30">
+                        <button type="button" id="HeaderUC_btnSearch" class="btn-search"></button> </div>
+
+                </div>
+            </div>
+            <div class="mobile-nav clearfix">
+                <a href="javascript:void(0);" title="
+
+手机端search" class="mobile-search"></a>
+                <a href="javascript:void(0);" title="menu" class="mobile-menu"></a>
+            </div>
+            <div class="mobile-search-box">
+
+                <div class="search">
+                    <input type="text" id="mtxtSearchKey" placeholder="search..." class="i-search" maxlength="30">
+                    <button type="submit" id="mHeaderUC_btnSearch" class="btn-search">search</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ol>
+            <li class="nav-list-child nav-list-industry" gsregion="2" gssnapshot="0">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/solutions">Solutions</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 sli01">
+                        <div class="tit-b">Solutions</div>
+                        <dl class="col2">
+
+                            <dd>
+                                <a href="https://www.ruijienetworks.com/solutions/scn/">Simplistic Campus Network Solution</a>
+                            </dd>
+                            <dd>
+                                <a href="https://www.ruijienetworks.com/solutions/marketing-wifi/">Marketing Wi-Fi Solution</a>
+                            </dd>
+                            <dd>
+                                <a href="https://www.ruijienetworks.com/solutions/4d-hospitality/">4D Hospitality Solution</a>
+                            </dd>
+
+                        </dl>
+                        <dl class="col2">
+                            <dd>
+                                <a href="https://www.ruijienetworks.com/solutions/3in1-k12/">3-in-1 K12 Solution
+
+									</a>
+                            </dd>
+                            <dd>
+                                <a href="https://www.ruijienetworks.com/solutions/cloud-management/">Cloud Management Solution</a>
+                            </dd>
+                            <!--     <dd><a 
+
+href="https://www.ruijienetworks.com/special/datacenter/index.aspx">Data Center 
+
+Solution</a></dd>-->
+                            <!--<dd class="mdd"><a href="/plan/City-
+
+widthIP.aspx">Video Surveillance Solution</a></dd>-->
+
+                        </dl>
+                    </li>
+
+                    <li class="ul-child li02">
+                        <div class="tit-b">Case Studies</div>
+                        <div class="navlist-cases">
+                            <div class="navlist-case">
+                                <a href="https://www.ruijienetworks.com/about/news/57863">
+                                    <img src="/res/UIB/img/navlist_case_01.jpg"><span>Shanghai Metro</span></a>
+                            </div>
+                            <div class="navlist-case">
+                                <a href="https://www.ruijienetworks.com/solutions/57862">
+                                    <img src="/res/UIB/img/navlist_case_02.jpg"><span>Tsinghua University</span></a>
+                            </div>
+                        </div>
+                        <div class="link-more">
+                            <a href="https://www.ruijienetworks.com/success-cases">View All Case Studies ></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="nav-list-child nav-list-industry nav-list-product" gsregion="2" gssnapshot="1">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/products">Products</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 sli01">
+                        <div class="tit-b">Enterprise</div>
+
+                        <div class="col-group cg1">
+                            <div class="col-group-title">Product</div>
+                            <div class="col-group-content">
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/switches/">Switches</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/routers/">Routers</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/wireless/">Wireless</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/security/">Security</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/software/">Software</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/cloud-class/">Cloud Class</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-group cg2">
+                            <div class="col-group-title">Cloud Service</div>
+                            <div class="col-group-content">
+                                <div class="col-group-list">
+                                    <a href="http://wis.ruijienetworks.com/">Wireless Intelligent Solution (WIS)</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="ul-child li02">
+                        <div class="tit-b">
+                            <a href="https://www.ruijienetworks.com/products/smb/">Small Business</a>
+                        </div>
+
+                        <div class="col-group cg1">
+                            <div class="col-group-title">Product</div>
+                            <div class="col-group-content">
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/switches/small-business-switches/#CPLB">Switches</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/smb/wireless/">Wireless</a>
+                                </div>
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/security/">Security</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-group cg2">
+                            <div class="col-group-title">Cloud Service</div>
+                            <div class="col-group-content">
+                                <div class="col-group-list">
+                                    <a href="https://www.ruijienetworks.com/products/smb/cloud-service/cloud-service/ruijie-cloud-solution">Ruijie Cloud</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-list-child nav-list-industry" gsregion="2" gssnapshot="2">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/support">Support</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 li02">
+                        <div class="dlbox">
+                            <div class="tit-b">Technical Support</div>
+                            <dl class="col2">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/documents">Technical Documents
+
+										</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/software-downloads">Software Download
+
+										</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/tools-resources">Tools and Resources</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/licensing">Product Licensing
+
+										</a>
+                                </dd>
+                            </dl>
+                            <dl class="col2">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/bulletins-1/">Bulletins</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/video">Training Video</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://community.ruijienetworks.com/mysql.php " target="_blank">Community</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://caseportal.ruijienetworks.com/ " target="_blank">Case Portal</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04">
+                        <div class="dlbox">
+                            <div class="tit-b ser-tit">Tools</div>
+                            <dl class="ser-dl">
+                                <dd>
+                                    <a href="http://upofile.ruijie.com.cn/EN/SoftWare/RG-RIIP_Setup_V1.1%20_EN.exe?
+
+_upd=true">
+                                        <img src="https://www.ruijienetworks.com/res/UIB/img/eplat.png"><span>RG-RIIP 
+
+Inspection <br />Platform</span></a>
+                                </dd>
+                                <dd>
+                                    <a href="http://upofile.ruijie.com.cn/EN/SoftWare/Intelligent%20Diagnostic
+
+%20Tool.zip?_upd=true">
+                                        <img src="https://www.ruijienetworks.com/res/UIB/img/tools.png"><span>Intelligent Diagnostic
+                                    <br>
+                                    Tool</span></a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="http://wis.ruijienetworks.com/" target="_blank">
+                                        <img src="https://www.ruijienetworks.com/res/UIB/img/wis1.png"><span>Wireless 
+
+Intelligent <br>Service</span></a>
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li03">
+                        <div class="dlbox">
+                            <div class="tit-b">Service Support</div>
+                            <dl class="col2">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/servicepolicy">Service Policy
+
+										</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/support/productlifecycle">Product Life Cycle</a>
+                                </dd>
+                                <!-- <dd class="mdd"><a href="#"></a></dd>-->
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-list-child nav-list-industry" gsregion="2" gssnapshot="3">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/trainings">Trainings</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 li02">
+                        <div class="dlbox">
+                            <div class="tit-b">Certifications</div>
+                            <dl class="col2">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/trainings/certification_2">Career Certification
+
+										</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/University/Certification_3">Specialist Certification</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/trainings/certification_5">Exam Policy
+
+										</a>
+                                </dd>
+                            </dl>
+                            <dl class="col2">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/trainings/resultsinquiry">Results Inquiry</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/trainings/certificateinquiry">Certificate Inquiry</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/trainings/myrgid">My RGID</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04">
+                        <div class="dlbox">
+                            <div class="tit-b">Trainings</div>
+                            <dl class="">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/trainings/certification_6">Courses</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/trainings/certification_7">Training Arrangements</a>
+                                </dd>
+                                <!--    <dd class="mdd"><a 
+
+href="/University/Certification_8">Exam Registration</a></dd>-->
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-list-child nav-list-industry" gsregion="2" gssnapshot="4">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/partners">Partners</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 li02">
+                        <div class="dlbox">
+                            <div class="tit-b">Become A Partner</div>
+                            <dl class="">
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/register.aspx">
+                                        <img src="https://www.ruijienetworks.com/res/UIB/img/partner1.jpg"></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04">
+                        <div class="dlbox">
+                            <div class="tit-b">Partner Locator</div>
+                            <dl class="">
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/partner/locator">
+                                        <img src="https://www.ruijienetworks.com/res/UIB/img/PartnerLocator.jpg"></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-list-child nav-list-industry" gsregion="2" gssnapshot="5">
+                <div class="tit-a">
+                    <a href="https://www.ruijienetworks.com/about">About Ruijie
+
+						</a><span class="addbtn"></span></div>
+                <ul>
+                    <li class="ul-child li01 li04 ">
+                        <div class="dlbox">
+                            <div class="tit-b">Company Introduction</div>
+                            <dl class="">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/history">Milestones</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/innovations">Innovations</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/excellent-quality">Excellent Quality
+
+										</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/corporate-culture">Corporate Culture</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/about/trademarks">Trademarks</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04">
+                        <div class="dlbox">
+                            <div class="tit-b">News & Media</div>
+                            <dl class="">
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/news">Newsroom</a>
+                                </dd>
+                                <dd>
+                                    <a href="https://www.ruijienetworks.com/about/videos">Videos</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/success-cases">Case Studies
+
+										</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04 ">
+                        <div class="dlbox">
+                            <div class="tit-b">Interactive Community</div>
+                            <dl class="">
+                                <dd>
+                                    <a href="javascript:void(0);" class="support">
+											Technical Support</a>
+                                </dd>
+                                <dd>
+                                    <a href="mailto:info@ruijienetworks.com">Sales Enquiry</a>
+                                </dd>
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/about/contact">Contact Us</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ul-child li01 li04 ">
+                        <div class="dlbox">
+                            <div class="tit-b">Resources</div>
+                            <dl class="">
+                                <dd class="mdd">
+                                    <a href="https://www.ruijienetworks.com/resources">
+                                        <img src="https://www.ruijienetworks.com/FU/ggw/XYS-
+
+XL-YXZL/201611145422743.jpg"></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="header-box"></div>
+    <div class="no-banner-line"></div>
+    <!-- 公共头部导航结束 -->
+
+    <!-- 正文开始 -->
+    <div class="eg-content">
+        <div class="nav-path">
+            <div class="nav-path-content">
+                <div>
+                    <ol class="">
+                        <li>
+                            <a href="#">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="#">Small and Medium-sized Business</a>
+                        </li>
+                        <li>
+                            <a class="active">Hospitality</a>
+                        </li>
+                    </ol>
+                    <p>Homepage</p>
+                    <p>Small and Medium-sized Business</p>
+                    <p class="active">Hospitality</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <img src="images/banner.png" />
+                <div>
+                    <p class="commom-header">New Era for<br>Guest Wi-Fi Service </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-1">
+            <div class="section-1-content">
+                <p class="commom-header">Empowering Customer<br>Satisfaction</p>
+                <div class="earth">
+                    <img src="images/section-1.png" />
+                    <div class="earth-content">
+                        <div class="leftdl">
+                            <dl>
+                                <dt>12,000+</dt>
+                                <dd>Hotels</dd>
+                            </dl>
+                        </div>
+                        <div class="rightdl">
+                            <dl>
+                                <dt>2,000,000+</dt>
+                                <dd>Rooms</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stylish-design">
+            <div class="commom-header">Stylish Design is Essential<br> Guest Comfort is MUST</div>
+            <div class="pc-show">
+                <img src="" alt="" class="design-start">
+            </div>
+            <div class="mobile-show">
+                <img src="" alt="" class="design-start">
+            </div>
+
+            <div class="swiper-container my-swiper" id="flipbook">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-no-swiping">
+                        <div>
+                            <div class="commom-header design-1">Stylish Design is Essential<br> Guest Comfort is MUST</div>
+
+                            <img src="images/design/111.jpg" alt="" class="pc-show">
+                            <img src="images/design/mobile-3.png" alt="" class="mobile-show">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <div>
+                            <div class="commom-header design-2">Stylish Design is Essential<br> Guest Comfort is MUST</div>
+                            <img src="images/design/22.png" alt="" class="pc-show">
+                            <img src="images/design/mobile-2.png" alt="" class="mobile-show">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <div>
+                            <div class="commom-header design-3">Stylish Design is Essential<br> Guest Comfort is MUST</div>
+                            <img src="images/design/3 (2).jpg" alt="" class="pc-show">
+                            <img src="images/design/mobile-1.png" alt="" class="mobile-show">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="roaming-intro">
+            <div class="commom-header">
+                Zero-interruption Roaming
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-no-swiping">
+                        <div>
+                            <p class="roaming-first">
+                                <img src="images/roaming/roaming-first_03.png" alt="" class="pc-show">
+                                <img src="images/roaming/roaming-mobile-1_02.png" alt="" class="mobile-show">
+
+                            </p>
+                            <div class="roaming-first-bottom">
+                                <div class="pc-show roaming-test">
+                                    <img src="images/roaming/test.png" alt="">
+                                </div>
+                                <div class="mobile-show roaming-test">
+                                    <img src="images/roaming/roaming-mobile-2_02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <div>
+                            <ul class="roaming-pic">
+                                <li class="list-1">
+                                    <img src="images/roaming/roming-left.png" alt="">
+                                </li>
+                                <li class="list-2">
+                                    <img src="images/roaming/roaming-middle-gray.png" alt="" class="gray-middle gray">
+                                    <img src="images/roaming/roaming-middle.png" alt="" class="light">
+                                </li>
+                                <li class="list-3">
+                                    <img src="images/roaming/roaming-right-gray.png" alt="" class="gray-right gray">
+                                    <img src="images/roaming/roaming-right.png" alt="" class="light">
+                                </li>
+                            </ul>
+                            <div class="roaming-move">
+                                <div class="main-img">
+                                    <img src="images/roaming/bottom.gif" alt="" width="100%" class="inactive-move move">
+                                    <img src="images/roaming/active.gif" alt="" width="100%" class="active-move move">
+                                    <div class="default">
+                                        <p>Guarantee For Mobile POS And VoIP Application</p>
+                                        <p>*Average roaming latency is less than 50ms</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="roaming-point">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--swiper end-->
+        </div>
+        <div class="section-4">
+            <div class="section-4-content">
+                <p class="commom-header">Guest Wi-Fi Hotspot </p>
+                <div class="section-4-img">
+                    <img src="images/computer.png" />
+                </div>
+                <p class="section-4-describe">Empowered by Ruijie Cloud, just taking minutes for<span> Guest Portal</span> to setup with flexible authentication options</p>
+            </div>
+        </div>
+        <div class="section-5">
+            <div class="section-5-content">
+                <div class="section-5-left">
+                    <img src="images/card.png" />
+                </div>
+                <div class="section-5-right">
+                    <p class="commom-header">Flexible Guest Control</p>
+                    <ul>
+                        <li><img src="images/phone-icon.png">
+                            <a href="">Device Limit</a>
+                        </li>
+                        <li><img src="images/time-icon.png">
+                            <a href="">Time Period</a>
+                        </li>
+                        <li><img src="images/data-icon.png">
+                            <a href="">Data Quota</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cloud-intro">
+            <div class="commom-header">
+                100% CLOUD
+            </div>
+            <div class="cloud-move">
+                <div class="default-move">
+                    <img src="images/cloud/cloud.gif" alt="">
+                </div>
+                <div class="cloud-left">
+                    <img src="images/cloud/clone-left.png" alt="">
+                </div>
+                <div class="cloud-right">
+                    <img src="images/cloud/cloud-right.png" alt="">
+                </div>
+
+                <div class="move-title">
+                    <span class="span1">1</span>
+                    <span class="span2">2</span >
+                </div>
+            </div>
+
+        </div>
+   		<div class="scene">
+                <div class="scene-container">
+                    <h3 class="commom-header">Scenario-based Product Design</h3>
+                    <div class="intro">
+                        <p>Ruijie's scenario-based AP design can satisfy different needs in various environments.</p>
+                        <p>The ceiling-mount and wall-plate of Ruijie access points options with enterprise-grade
+                            reliability and stylish design guarantee excellent Wi-Fi coverage and fashionable interior design.</p>
+                    </div>
+                    <div class="scene-body">
+                        <div class="scene-tabs">
+                            <div class="hotel-items">
+                                <div class="sub-hotel-item active" data-index="1">
+                                    <img src="images/hotel-2-1.png">
+                                </div>
+                                <div class="sub-hotel-item" data-index="2">
+                                    <img src="images/hotel-2-2.png">
+                                </div>
+                                <div class="sub-hotel-item" data-index="3">
+                                    <img src="images/hotel-2-3.png">
+                                </div>
+                            </div>
+                            <ul class="tab-item">
+                                <li class="active" data-index="1"><img src="images/icon-room.png"><span class="tab-text">In-room</span></li>
+                    <li data-index="2"><img src="images/icon-corridor.png"><span class="tab-text">Corridor</span></li>
+                    <li data-index="3"><img src="images/icon-lobby.png"><span class="tab-text">Lobby / Restaurant</span></li>
+                    </ul>
+                </div>
+                <div class="scene-items">
+                    <div class="tab-content active" data-index="1">
+                        <img src="images/scene-room.png">
+                        <div class="tip">
+                            <img src="images/product-small-1.png">
+                            <div class="tip-content">
+                                <h4>RG-AP130(L)</h4>
+                                <p>802.11ac Wall-Plate</p>
+                                <p>(Replaceable Cover)</p>
+                            </div>
+                        </div>
+                        <div class="ripple">
+                            <!--<img src="images/product-min-1.png">-->
+                            <img src="images/product-min-1_new.png" />
+                        </div>
+                    </div>
+                    <div class="tab-content" data-index="2">
+                        <img src="images/scene-corridor.png">
+                        <div class="tip">
+                            <img src="images/product-small-2.png">
+                            <div class="tip-content">
+                                <h4>RG-AP710</h4>
+                                <p>802.11ac Dual-Radio</p>
+                            </div>
+                        </div>
+                        <div class="ripple"><img src="images/product-min-2.png"></div>
+                    </div>
+                    <div class="tab-content" data-index="3">
+                        <img src="images/scene-restaurant.png">
+                        <div class="tip">
+                            <img src="images/product-small-2.png">
+                            <div class="tip-content">
+                                <h4>RG-AP720-L</h4>
+                                <p>802.11ac Wave 2 Dual-Radio</p>
+                            </div>
+                        </div>
+                        <div class="ripple"><img src="images/product-min-2.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 正文结束 -->
+
+    <!-- 公共底部导航开始 -->
+    <div class="consult">
+        <div class="pcbox clearfix">
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="#" title=""><img src="https://www.ruijienetworks.com/res/UIB/img/r-message.png" alt=""><strong>Sales  Enquiry</strong></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="a-tel"><img src="https://www.ruijienetworks.com/res/UIB/img/skypeapp.png" alt=""><strong>Technical Support （APP）</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobilebox">
+            <ul class="clearfix">
+                <li>
+                    <a href="#" title=""><img src="https://www.ruijienetworks.com/res/UIB/img/consult_m_01.png" alt=""><strong>Sales  Enquiry<br></strong></a>
+                </li>
+                <li>
+                    <a href="#" title=""><img src="https://www.ruijienetworks.com/res/UIB/img/consult_m_02.png" alt=""><strong>Technical Support （APP）</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <link type="text/css" href="https://www.ruijienetworks.com/res/UIB/Styles_R/css-wf.css" rel="stylesheet">
+    <div class="footer">
+        <div class="top">
+            <a href="#" title="" class="back-top">返回顶部</a>
+            <div class="footer-nav clearfix">
+                <dl>
+                    <dt>Company</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/about">About Ruijie</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/about/history">Milestones</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/about/news">News Center</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/about/contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Partner</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/register.aspx">Become a Partner</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/partner/locator">Partner Locator</a>
+                            </li>
+
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Support</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/support/documents">Technical Documents</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/support/software-downloads">Software Download</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/support/servicepolicy">Warranty</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Resources</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://community.ruijienetworks.com/mysql.php">Community</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/resources">Resource Center</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/about/videos">Videos</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/success-cases">Case Studies</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="right">
+                    <dt>Quick Links</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/products/smb/">Small Business</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ruijienetworks.com/products">Product Family</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!--分享开始/wf-->
+            <div class="share">
+                <ul>
+                    <li class="share-bt">FOLLOW US</li>
+                    <li>
+                        <a href="https://www.faceflipbook.com/RuijieGlobal" class="fb"><img src="https://www.ruijienetworks.com/res/UIB/img/FB.png" width="9" height="17" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ruijie-networks/" class="ly"><img src="https://www.ruijienetworks.com/res/UIB/img/LY.png" width="14" height="14" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCGRKfa-qQK3CXtQoG0Z0Ymg" class="ytb"><img src="https://www.ruijienetworks.com/res/UIB/img/YTB.png" width="17" height="13" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div style="height:0; clear:both; overflow:hidden"></div>
+            <!--分享结束/wf-->
+        </div>
+        <div class="bottom">
+            <div class="bottom-in">
+                <ul>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/about/contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/sitemap.aspx">Site Map</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ruijienetworks.com/privacy.aspx">Privacy Policy</a>
+                    </li>
+                </ul>
+                <div class="copyright">©2000-2018 Ruijie Networks Co., Ltd.</div>
+            </div>
+        </div>
+    </div>
+    <!-- 公共底部导航结束 -->
+</body>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-6969818-2");
+        pageTracker._trackPageview();
+    } catch (err) {}
+</script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F30bc1323cf8716a2ab043ba79543d77d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="js/scene.js"></script>
+
+</html>

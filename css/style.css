@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html {
+	font-family: arial;
+}
+
+.eg-content .commom-header {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.eg-content .nav-path .nav-path-content p.active {
+	display: block;
+}
+
+.eg-content .nav-path {
+	background-color: #1b1b1b;
+}
+
+.eg-content .nav-path .nav-path-content {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 5%;
+}
+
+.eg-content .nav-path a {
+	color: #a4a4a4;
+	font-size: 14px;
+}
+
+.eg-content .nav-path li {
+	display: inline-block;
+}
+
+.eg-content .nav-path li+li:before {
+	content: ">";
+	color: #a4a4a4;
+}
+
+.eg-content .nav-path p,
+.eg-content .nav-path ol a.active {
+	color: white;
+}
+
+.eg-content .nav-path p {
+	display: none;
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.eg-content .banner .banner-content {
+	position: relative;
+}
+
+.eg-content .banner .banner-content>img {
+	width: 100%;
+}
+
+.eg-content .banner .banner-content>div {
+	position: absolute;
+	background-color: #d70030;
+	top: 19%;
+	/*width: 50%;*/
+	width: 46%;
+	padding: 4% 0;
+	padding-right: 4%;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: flex-end;
+}
+
+.eg-content .banner .banner-content>div p {
+	width: 100%;
+	color: white;
+	text-align: right;
+	/*padding-right: 7.6%;*/
+	line-height: 1em;
+}
+
+.eg-content .section-1 {
+	background-color: #d5eeff;
+}
+
+.eg-content .section-1 .section-1-content {
+	/*padding: 70px 20% 0;*/
+	padding: 0 20%;
+	margin: 0 auto;
+}
+
+
+/*.eg-content .section-1 .section-1-content p.commom-header,
+.eg-content .stylish-design .commom-header,
+.eg-content .scene .scene-container{
+	line-height: 1em;
+	padding-top: 100px;
+}*/
+
+.eg-content .section-1 .section-1-content .earth>img {
+	width: 100%;
+}
+
+.eg-content .section-1 .section-1-content .earth {
+	position: relative;
+	margin-top: 60px;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content {
+	position: absolute;
+	bottom: 8%;
+	color: white;
+	width: 100%;
+	display: flex;
+	/*add*/
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content .leftdl,
+.eg-content .section-1 .section-1-content .earth .earth-content .rightdl {
+	display: inline-block;
+	width: 50%;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content .leftdl {
+	border-right: 1px solid white;
+	margin-right: -1px;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content .leftdl dl {
+	margin-right: 10%;
+	float: right;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content .rightdl dl {
+	margin-left: 10%;
+	float: left;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content dt {
+	font-size: 30px;
+}
+
+.eg-content .section-1 .section-1-content .earth .earth-content dd {
+	font-size: 20px;
+}
+
+
+/*section-4*/
+
+.eg-content .section-4 {
+	background-image: url(../images/section-4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.eg-content .section-4 .section-4-content {
+	padding: 0 20% 90px;
+	/*padding-top: 40px;*/
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.eg-content .section-4 .section-4-content .commom-header {
+	margin-bottom: 100px;
+}
+
+.eg-content .section-4 .section-4-content .section-4-img {
+	margin-right: -5%;
+}
+
+.eg-content .section-4 .section-4-content .section-4-img>img {
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+.eg-content .section-4 .section-4-content .section-4-describe {
+	font-size: 24px;
+	color: white;
+	/*margin: 0 -20%;*/
+	padding: 0 10%;
+}
+.eg-content .section-4 .section-4-content .section-4-describe span{
+	white-space: nowrap;
+}
+
+.eg-content .section-5 {
+	background-color: #b0052c;
+	overflow: hidden;
+}
+
+.eg-content .section-5 .section-5-content {
+	position: relative;
+}
+
+.eg-content .section-5 .section-5-content .section-5-left,
+.eg-content .section-5 .section-5-content .section-5-right {
+	display: inline-block;
+	width: 50%;
+}
+
+.eg-content .section-5 .section-5-content .section-5-left>img {
+	width: 100%;
+	height: 100%;
+}
+
+.eg-content .section-5 .section-5-content .section-5-right {
+	position: absolute;
+	/*top: 36%;*/
+	padding-top: 15%;
+	top: 0;
+	bottom: 0;
+}
+
+.eg-content .section-5 .section-5-content .section-5-right .commom-header {
+	text-align: left;
+	color: white;
+	margin-bottom: 1.5em;
+}
+
+.eg-content .section-5 .section-5-content .section-5-right li {
+	display: flex;
+	font-size: 24px;
+	line-height: 2em;
+	align-items: center;
+}
+
+.eg-content .section-5 .section-5-content .section-5-right ul a {
+	color: white;
+	margin-left: 15px;
+}
+
+.eg-content .section-5 .section-5-content .section-5-right ul li:first-child>img {
+	margin-right: 4px;
+}
+
+
+/*common title*/
+
+.scene-container,
+.cloud-intro {
+	padding-top: 0;
+}
+
+.eg-content .section-1 .section-1-content p.commom-header,
+.eg-content .stylish-design .commom-header,
+.eg-content .roaming-intro,
+.eg-content .section-4 .section-4-content p.commom-header,
+.eg-content .cloud-intro div.commom-header,
+.eg-content .scene .scene-container h3.commom-header {
+	line-height: 1em;
+	padding-top: 100px;
+}
+
+@media only screen and (max-width: 1250px) {
+	.eg-content .section-4 .section-4-content .section-4-describe {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	/*.eg-content .section-5 .section-5-content .section-5-right {
+		top: 20%;
+	}*/
+}
+
+@media only screen and (max-width: 1024px) {
+	.eg-content .commom-header {
+		font-size: 21px;
+	}
+	.eg-content .nav-path .nav-path-content {
+		padding-left: 3.6%;
+		padding-right: 3.6%;
+		padding-top: 13px;
+		padding-bottom: 17px;
+	}
+	.eg-content .nav-path a {
+		font-size: 12px;
+	}
+	.eg-content .nav-path p {
+		font-size: 18px;
+	}
+	.eg-content .banner .banner-content {
+		overflow: hidden;
+	}
+	.eg-content .banner .banner-content>img {
+		width: 116%;
+		margin-left: -8%;
+	}
+	.eg-content .section-1 .section-1-content {
+		padding: 0 3.2%;		
+	}
+	.eg-content .section-1 .section-1-content .earth .earth-content dt {
+		font-size: 18px;
+	}
+	.eg-content .section-1 .section-1-content .earth .earth-content dd {
+		font-size: 15px;
+	}
+	.eg-content .section-1 .section-1-content .earth {
+		margin-top: 30px;
+	}
+	.eg-content .section-4 .section-4-content {
+		padding: 0 2% 20px;
+	}
+	.eg-content .section-4 .section-4-content .commom-header {
+		margin-bottom: 50px;
+	}
+	.eg-content .section-4 .section-4-content .section-4-img {
+		margin-right: -1%;
+	}
+	.eg-content .section-4 .section-4-content .section-4-img>img {
+		margin-bottom: 30px;
+	}
+	.eg-content .section-4 .section-4-content .section-4-describe {
+		font-size: 18px;
+		margin: 0;
+		padding: 0 10%;
+	}
+	.eg-content .section-5 .section-5-content .section-5-left {
+		width: 60%;
+	}
+	.eg-content .section-5 .section-5-content .section-5-left>img {
+		width: 126%;
+		margin-left: -26%;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right {
+		width: 40%;
+		/*top: 34%;*/
+		padding-top: 20%;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li {
+		font-size: 18px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li>img {
+		width: 18px;
+		height: 18px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right ul li:first-child>img {
+		margin-right: 0;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right ul a {
+		margin-left: 12px;
+	}
+	.scene-container,
+	.cloud-intro {
+		padding-top: 0;
+	}
+
+	.eg-content .section-1 .section-1-content p.commom-header,
+	.eg-content .stylish-design .commom-header,
+	.eg-content .roaming-intro,
+	.eg-content .section-4 .section-4-content p.commom-header,
+	.eg-content .cloud-intro div.commom-header,
+	.eg-content .scene .scene-container h3.commom-header {
+		line-height: 1em;
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.eg-content .nav-path a {
+		font-size: 12px;
+	}
+	.eg-content .nav-path p {
+		font-size: 16px;
+	}
+	/*common title*/
+	/*.eg-content .banner .banner-content>div p.commom-header,
+	.eg-content .section-5 .section-5-content .section-5-right p.commom-header {
+		font-size: 14px;
+	}*/
+	.eg-content .section-1 .section-1-content .earth .earth-content dt {
+		font-size: 15px;
+	}
+	.eg-content .section-1 .section-1-content .earth .earth-content dd {
+		font-size: 12px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li {
+		font-size: 15px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li>img {
+		width: 15px;
+		height: 15px;
+	}
+	.scene-container,
+	.cloud-intro {
+		padding-top: 0;
+	}
+
+	.eg-content .section-1 .section-1-content p.commom-header,
+	.eg-content .stylish-design .commom-header,
+	.eg-content .roaming-intro,
+	.eg-content .section-4 .section-4-content p.commom-header,
+	.eg-content .cloud-intro div.commom-header,
+	.eg-content .scene .scene-container h3.commom-header {
+		line-height: 1em;
+		padding-top: 25px;
+	}
+}
+
+@media only screen and (max-width:520px) {
+	.eg-content .commom-header {
+		font-size: 14px;
+	}
+	.eg-content .section-1 .section-1-content .earth .earth-content dt {
+		font-size: 13px;
+	}
+	.eg-content .section-4 .section-4-content .section-4-describe {
+		font-size: 12px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li {
+		font-size: 12px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right li>img {
+		width: 12px;
+		height: 12px;
+	}
+	.eg-content .section-5 .section-5-content .section-5-right ul a {
+		margin-left: 8px;
+	}
+}

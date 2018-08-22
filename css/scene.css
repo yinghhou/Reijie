@@ -1,0 +1,549 @@
+@keyframes show-tab {
+    to {
+        background-color: rgba(42, 52, 72, 0.8);
+    }
+}
+
+@keyframes show-tip {
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes ripple-small {
+    to {
+        /*opacity: 1;*/
+        border: 1px solid #ffffff;
+    }
+}
+
+@keyframes ripple-middle {
+    30% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes ripple-big {
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.scene {
+    background: url("../images/background-scene.jpg") center top no-repeat;
+}
+
+.scene-container {
+    max-width: 1200px;
+    padding: 3% 0 0;   
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scene h3 {
+    color: #d00027;
+    /*font-size: 42px;*/
+    text-align: center;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+.scene .intro {
+    /*font-size: 16px;*/
+   	font-size: 24px;
+    color: #333333;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.scene-body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.scene-tabs {
+    max-width: 450px;
+    width: 450px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.scene-items {
+    max-width: 480px;
+    padding-bottom: 50px;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.tab-content {
+    display: none;
+    opacity: 0.3;
+    position: relative;
+}
+
+.tab-content:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(42, 52, 72, 0);
+    opacity: 0.5;
+}
+
+.tab-content>img {
+    width: 100%;
+    height: auto;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.tab-content.active:after {
+    animation: show-tab 3s forwards;
+    -webkit-animation: show-tab 3s forwards;
+}
+
+.sub-hotel-item {
+    margin-left: -274px;
+    height: 528px;
+    display: none;
+}
+
+.sub-hotel-item.active {
+    display: block;
+}
+
+.sub-hotel-item>img {
+    height: 100%;
+    width: auto;
+}
+
+.tab-item {
+    position: absolute;
+    right: 0;
+    top: 145px;
+}
+
+.tab-item li {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    background: #333333;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-item li+li {
+    margin-top: 87px;
+}
+
+.tab-item li:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #333333 transparent;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.tab-item img {
+    width: 23px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.tab-item li.active {
+    background: #d00027;
+}
+
+.tab-item li.active:before {
+    border-color: transparent #d00027 transparent;
+}
+
+.tip {
+    position: absolute;
+    background: #ffffff;
+    padding: 30px 50px;
+    line-height: 24px;
+    border-radius: 3px;
+    z-index: 99;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.tab-content:nth-child(1) .tip {
+    top: -110px;
+    left: 20px;
+}
+
+.tab-content:nth-child(2) .tip {
+    top: -98px;
+    left: 52px;
+}
+
+.tab-content:nth-child(3) .tip {
+    left: 59px;
+    top: -70px;
+}
+
+.tip>img {
+    width: 70px;
+    height: auto;
+}
+
+.tip-content {
+    padding-left: 25px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.tip-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tip-content p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tip:before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: rgba(255, 255, 255, 0.9) transparent transparent;
+    bottom: -8px;
+}
+
+.tab-content:nth-child(1) .tip:before {
+    left: 48px;
+}
+
+.tab-content:nth-child(2) .tip:before {
+    left: 220px;
+}
+
+.tab-content:nth-child(3) .tip:before {
+    left: 279px;
+}
+
+.tab-content.active .tip {
+    animation: show-tip 3s 1s forwards;
+    -webkit-animation: show-tip 3s 1s forwards;
+}
+
+.ripple {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    z-index: 9;
+    padding: 6px 2px;
+}
+
+.tab-content:nth-child(1) .ripple {
+    top: 51px;
+    left: 57px;
+    width: 36px;
+    transform: rotateX(-30deg);
+    -ms-transform: rotateY(-30deg);
+    -moz-transform: rotateY(-30deg);
+    -webkit-transform: rotateY(-30deg);
+    -o-transform: rotateY(-30deg);
+}
+
+.tab-content:nth-child(2) .ripple {
+    top: 35px;
+    left: 265px;
+    width: 25px;
+    transform: rotateX(60deg);
+    -ms-transform: rotateX(60deg);
+    -moz-transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+    -o-transform: rotateX(60deg);
+}
+
+.tab-content:nth-child(3) .ripple {
+    left: 329px;
+    top: 80px;
+    width: 24px;
+}
+
+.ripple>img {
+    width: 80%;
+    height: auto;
+}
+
+.ripple:before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.ripple:after {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.tab-content.active .ripple {
+    animation: ripple-small 1s forwards;
+    -webkit-animation: ripple-small 1s forwards;
+}
+
+.tab-content.active .ripple:before {
+    animation: ripple-middle 1s ease-in infinite;
+    -webkit-animation: ripple-middle 1s ease-in infinite;
+}
+
+.tab-content.active .ripple:after {
+    animation: ripple-big 1s ease-in infinite;
+    -webkit-animation: ripple-big 1s ease-in infinite;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+	.scene h3{
+		font-size: 21px;
+	}	
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .scene h3 {
+        font-size: 36px;
+    }
+    .scene .intro{
+    	font-size: 16px;
+    }
+    .sub-hotel-item {
+        height: 400px;
+    }
+    .tab-item {
+        top: 114px;
+    }
+    .tab-item li {
+        height: 40px;
+        line-height: 40px;
+    }
+    .tab-item li+li {
+        margin-top: 58px;
+    }
+    .scene-items {
+        max-width: 344px;
+    }
+    .scene-tabs {
+        max-width: 363px;
+        width: 363px;
+    }
+    .tip {
+        padding: 15px 30px;
+    }
+    .tab-content:nth-child(1) .tip {
+        top: -64px;
+        left: 15px;
+    }
+    .tab-content:nth-child(2) .tip {
+        top: -67px;
+        left: 46px;
+    }
+    .tab-content:nth-child(3) .tip {
+        left: 36px;
+        top: -27px;
+    }
+    .tab-content:nth-child(1) .tip:before {
+        left: 53px;
+    }
+    .tab-content:nth-child(2) .tip:before {
+        left: 144px;
+    }
+    .tab-content:nth-child(3) .tip:before {
+        left: 203px;
+    }
+    .tip>img {
+        width: 55px;
+    }
+    .tip-content h4 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .tip-content p {
+        font-size: 12px;
+    }
+    .tab-content:nth-child(2) .ripple {
+        width: 30px;
+        top: 34px;
+        left: 41px;
+    }
+    .tab-content:nth-child(2) .ripple {
+        top: 24px;
+        left: 184px;
+    }
+    .tab-content:nth-child(3) .ripple {
+        left: 233px;
+        top: 74px;
+    }
+}
+
+@media (max-width: 767px) {
+    .scene h3 {
+        font-size: 28px;
+    }
+    .scene .intro {
+        margin-bottom: 75px;
+        font-size: 14px;
+    }
+    .scene-tabs {
+        max-width: 45%;
+    }
+    .sub-hotel-item {
+        height: 200px;
+        margin-left: -88px;
+    }
+    .tab-item {
+        top: 38px;
+        right: 25px;
+    }
+    .tab-item li {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 12px;
+    }
+    .tab-item li:before {
+        border-width: 6px 8px 6px 0;
+        left: -15px;
+    }
+    .tab-item img {
+        width: 18px;
+        margin-right: 0;
+    }
+    .tab-text {
+        display: none;
+    }
+    .tab-item li+li {
+        margin-top: 20px;
+    }
+    .scene-items {
+        max-width: 200px;
+        padding-bottom: 18px;
+    }
+    .tip {
+        padding: 10px 15px;
+    }
+    .tab-content:nth-child(1) .tip {
+        top: -85px;
+        left: 12px;
+    }
+    .tab-content:nth-child(2) .tip {
+        top: -60px;
+        left: 39px;
+    }
+    .tab-content:nth-child(3) .tip {
+        left: 0px;
+        top: -47px;
+    }
+    .tip>img {
+        display: none;
+    }
+    .tip-content {
+        padding-left: 0;
+    }
+    .tip-content h4 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .tab-content:nth-child(1) .tip:before {
+        left: 14px;
+    }
+    .tab-content:nth-child(2) .tip:before {
+        left: 70px;
+    }
+    .tab-content:nth-child(3) .tip:before {
+        left: 137px;
+    }
+    .tab-content p {
+        font-size: 12px;
+    }
+    .tab-content:nth-child(1) .ripple {
+        width: 15px;
+        top: 19px;
+        left: 24px;
+    }
+    .tab-content:nth-child(2) .ripple {
+        top: 14px;
+        left: 108px;
+        width: 14px;
+    }
+    .tab-content:nth-child(3) .ripple {
+        left: 136px;
+        top: 36px;
+        width: 13px;
+    }
+}
+/*add*/
+@media only screen and (max-width:520px ) {
+	.scene h3 {
+        font-size: 14px;
+    }
+    .scene .intro {
+        font-size: 12px;
+    }
+    .tip-content h4 {
+        font-size: 13px;
+    }
+}

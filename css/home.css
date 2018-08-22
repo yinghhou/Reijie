@@ -1,0 +1,464 @@
+/*public style*/
+
+.commom-header {
+    color: #d90030;
+    font-size: 42px;
+    text-align: center;
+    /* text-transform: uppercase;
+    font-weight: bold;*/
+}
+
+
+/*stylish css*/
+
+.stylish-design>img {
+    width: 100%;
+    display: block;
+}
+
+.stylish-design .commom-header {
+    background: #e4f1fe;
+    padding: 20px;
+}
+
+.stylish-design .design-2 {
+    background: #636f7f;
+    color: #fff;
+}
+
+.stylish-design .design-3 {
+    background: #fafbad;
+}
+
+.stylish-design img {
+    width: 100%;
+    height: 100%
+}
+
+.my-swiper .swiper-slide img {
+    width: 100%;
+    position: relative;
+    top: -1px;
+}
+
+.my-swiper .swiper-container {
+    width: 100%;
+}
+
+.my-swiper .swiper-slide>div {
+    width: 100%;
+}
+
+.my-swiper .swiper-pagination {
+    z-index: 1000;
+    bottom: 28% !important;
+    left: 0;
+}
+
+.my-swiper .swiper-pagination>span {
+    display: inline-block;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    /*border-radius: 100%;*/
+    margin: 0 1% !important;
+    position: relative;
+}
+
+.my-swiper .swiper-pagination>span.swiper-pagination-bullet-active:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    clear: both;
+    border-radius: 100%;
+    top: -4px;
+    left: -4px;
+}
+
+.my-swiper .swiper-pagination>span:first-child {
+    background: #fff;
+}
+
+.my-swiper .swiper-pagination>span:first-child.swiper-pagination-bullet-active:before {
+    border: 1px solid #fff;
+}
+
+.my-swiper .swiper-pagination>span:nth-child(2) {
+    background: #000;
+}
+
+.my-swiper .swiper-pagination>span:nth-child(2).swiper-pagination-bullet-active:before {
+    border: 1px solid #000;
+}
+
+.my-swiper .swiper-pagination>span:last-child {
+    background: #ddb812;
+}
+
+.my-swiper .swiper-pagination>span:last-child.swiper-pagination-bullet-active:before {
+    border: 1px solid #ddb812;
+}
+
+
+/* riaming css */
+
+.roaming-intro {
+    padding: 40px 5% 0;
+    background: #fff;
+}
+
+.roaming-intro .swiper-slide>div,
+.roaming-intro .swiper-slide,
+.roaming-intro .swiper-container,
+.roaming-intro .swiper-wrapper {
+    width: 100%;
+    height: auto !important;
+    z-index: 0;
+}
+
+.roaming-intro .swiper-container {
+    padding-bottom: 5%;
+}
+
+.roaming-intro .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: -22px;
+    z-index: 100000;
+    position: relative;
+}
+
+.roaming-intro .swiper-pagination-bullet-active {
+    background: #d90030;
+}
+
+.roaming-intro .swiper-slide {
+    display: flex;
+    margin-left: -1px;
+    align-items: stretch;
+}
+
+.roaming-first {
+    position: relative;
+    z-index: 0;
+}
+
+.roaming-first:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    clear: both;
+    width: 50px;
+    height: 50px;
+    background: #d90030;
+    background-image: url("../images/roaming/wifi.png");
+    z-index: 10000;
+    background-position: center 58%;
+    background-repeat: no-repeat;
+    background-size: 62%;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*设置高度*/
+
+.roaming-first img,
+.roaming-pic li img {
+    height: 405px;
+    width: 100%;
+}
+
+.main-img img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.main-img .default {
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    background: #d90030;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.main-img .default p:last-child {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.roaming-first-bottom .roaming-test {
+    width: 100%;
+    background: #d90030;
+    text-align: center;
+}
+
+.roaming-first-bottom img {
+    height: 180px;
+    position: relative;
+}
+
+.main-img .move {
+    height: 120px;
+}
+
+.main-img .default {
+    height: 60px;
+}
+
+.roaming-intro .commom-header {
+    margin-bottom: 4%;
+}
+
+.roaming-pic {
+    margin: 0 auto;
+    display: flex;
+}
+
+.roaming-pic li {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.roaming-intro .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.roaming-intro .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.roaming-pic li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    clear: both;
+    width: 50px;
+    height: 50px;
+    background: #939393;
+    background-image: url("../images/roaming/wifi.png");
+    background-position: center 58%;
+    background-repeat: no-repeat;
+    background-size: 62%;
+    z-index: 1;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.roaming-pic li:first-child:before {
+    width: 0;
+}
+
+.roaming-pic li.active:before {
+    background-color: #d90030;
+}
+
+.roaming-pic li>img {
+    width: 100%;
+}
+
+.light {
+    display: none;
+}
+
+.active .gray {
+    display: none;
+}
+
+.active .light {
+    display: block;
+}
+
+.roaming-move {
+    position: relative;
+}
+
+.roaming-move>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.roaming-bottom {
+    background: #d90030;
+}
+
+
+/*云 css*/
+
+.cloud-intro {
+    padding: 40px 10% 0;
+    background: #f4f4f4;
+}
+
+.cloud-intro .default-move {
+    width: 100%;
+}
+
+.cloud-move {
+    position: relative;
+}
+
+.cloud-move img {
+    width: 100%;
+    transform: scale(0.9)
+}
+
+.move-title {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    width: 100%;
+}
+
+.move-title span {
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    padding: 3% 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.move-title span:last-child {
+    position: absolute;
+    right: 12%;
+}
+
+
+/*show hide*/
+
+.mobile-show {
+    display: none;
+}
+
+
+/*适配*/
+
+@media screen and (min-width: 1680px) {
+    .roaming-first img,
+    .roaming-pic li img {
+        height: 435px;
+    }
+    .roaming-first-bottom img {
+        height: 210px;
+    }
+    .roaming-move .move {
+        height: 150px
+    }
+    .roaming-move .default {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .roaming-first img,
+    .roaming-pic li img {
+        height: 320px;
+    }
+    .roaming-first-bottom img {
+        height: 135px;
+    }
+    .roaming-move .move {
+        height: 95px
+    }
+    .roaming-move .default {
+        height: 40px;
+    }
+    .commom-header {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .roaming-first img,
+    .roaming-pic li img {
+        height: 280px;
+    }
+    .roaming-first-bottom img {
+        height: 120px;
+    }
+    .roaming-move .move {
+        height: 85px
+    }
+    .roaming-move .default {
+        height: 35px;
+    }
+    .my-swiper .swiper-pagination {
+        bottom: 24% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-show {
+        display: block;
+    }
+    .pc-show {
+        display: none;
+    }
+    .roaming-first img,
+    .roaming-pic li img {
+        height: 204px;
+    }
+    .roaming-first-bottom img {
+        height: 70px;
+    }
+    .roaming-move .move {
+        height: 50px
+    }
+    .roaming-move .default {
+        height: 20px;
+    }
+    .roaming-intro {
+        padding: 20px 0 0;
+    }
+    .roaming-first:before,
+    .roaming-pic li:before {
+        width: 34px;
+        height: 34px;
+    }
+    .roaming-intro .swiper-container {
+        padding-bottom: 10%;
+    }
+    .move-title {
+        left: 0;
+        top: 2%;
+    }
+    .move-title span {
+        padding: 0;
+    }
+    .move-title span:focus {
+        outline: #fff;
+    }
+    .move-title span:last-child {
+        right: 1%;
+    }
+    .cloud-intro {
+        padding-top: 20px;
+    }
+    .my-swiper .swiper-pagination>span {
+        width: 10px;
+        height: 10px;
+        margin: 0 4% !important;
+    }
+    .my-swiper .swiper-pagination {
+        bottom: 25% !important;
+    }
+    .my-swiper .swiper-pagination>span.swiper-pagination-bullet-active:before {
+        width: 16px;
+        height: 16px;
+    }
+}
